@@ -1,0 +1,104 @@
+<div class="healthcare-report">
+  <!-- Loading State -->
+  <div *ngIf="loading" class="loading-container">
+    <i class="pi pi-spin pi-spinner" style="font-size: 2rem"></i>
+    <p>Đang tải dữ liệu...</p>
+  </div>
+
+  <!-- Error State -->
+  <div *ngIf="error && !loading" class="error-container">
+    <i class="pi pi-exclamation-triangle" style="font-size: 2rem; color: #ef4444"></i>
+    <p>{{ error }}</p>
+    <button (click)="reloadData()" class="reload-btn">
+      <i class="pi pi-refresh"></i> Thử lại
+    </button>
+  </div>
+
+  <!-- Data Display -->
+  <div *ngIf="reportData && !loading" class="report-content">
+    <!-- Summary Section -->
+    <div class="report-header">
+      <h1>{{ reportData.summary.title }}</h1>
+      <p class="description">{{ reportData.summary.description }}</p>
+      <div class="meta-info">
+        <span><i class="pi pi-calendar"></i> Kỳ báo cáo: {{ reportData.summary.period }}</span>
+        <span><i class="pi pi-clock"></i> Cập nhật: {{ reportData.summary.lastUpdated }}</span>
+      </div>
+    </div>
+
+    <!-- Statistics Cards -->
+    <div class="statistics-grid">
+      <div *ngFor="let stat of reportData.statistics" class="stat-card" [style.border-left-color]="stat.color">
+        <div class="stat-icon" [style.color]="stat.color">
+          <i [class]="stat.icon"></i>
+        </div>
+        <div class="stat-content">
+          <h3>{{ stat.label }}</h3>
+          <div class="stat-value">
+            {{ stat.value }} <span class="unit">{{ stat.unit }}</span>
+          </div>
+          <div *ngIf="stat.trend" class="stat-trend" [class.trend-up]="stat.trend === 'up'" [class.trend-down]="stat.trend === 'down'">
+            <i [class]="stat.trend === 'up' ? 'pi pi-arrow-up' : stat.trend === 'down' ? 'pi pi-arrow-down' : 'pi pi-minus'"></i>
+            <span *ngIf="stat.trendValue">{{ stat.trendValue }}%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Charts Section -->
+    <div class="charts-section">
+      <h2>Biểu đồ phân tích</h2>
+      <div class="charts-grid">
+        <div *ngFor="let chart of reportData.charts" class="chart-card">
+          <h3>{{ chart.title }}</h3>
+          <p class="chart-type">Loại: {{ chart.type }}</p>
+          <!-- Placeholder for actual chart implementation -->
+          <div class="chart-placeholder">
+            <i class="pi pi-chart-bar" style="font-size: 3rem; color: #94a3b8"></i>
+            <p>Biểu đồ {{ chart.type }} - {{ chart.datasets.length }} dataset(s)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Facilities Table -->
+    <div *ngIf="reportData.facilities && reportData.facilities.length > 0" class="facilities-section">
+      <h2>Danh sách cơ sở y tế</h2>
+      <table class="facilities-table">
+        <thead>
+          <tr>
+            <th>Mã</th>
+            <th>Tên cơ sở</th>
+            <th>Loại hình</th>
+            <th>Địa chỉ</th>
+            <th>Sức chứa</th>
+            <th>Nhân viên</th>
+            <th>Bệnh nhân</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let facility of reportData.facilities">
+            <td>{{ facility.id }}</td>
+            <td>{{ facility.name }}</td>
+            <td>
+              <span class="facility-type" [class]="'type-' + facility.type">
+                {{ facility.type === 'hospital' ? 'Bệnh viện' : facility.type === 'clinic' ? 'Phòng khám' : 'Trạm y tế' }}
+              </span>
+            </td>
+            <td>{{ facility.address }}</td>
+            <td>{{ facility.capacity }}</td>
+            <td>{{ facility.staff }}</td>
+            <td>{{ facility.patients }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Reload Button -->
+    <div class="actions">
+      <button (click)="reloadData()" class="reload-btn">
+        <i class="pi pi-refresh"></i> Tải lại dữ liệu
+      </button>
+    </div>
+  </div>
+</div>

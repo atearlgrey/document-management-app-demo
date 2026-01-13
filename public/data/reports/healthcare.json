@@ -1,0 +1,177 @@
+{
+  "summary": {
+    "title": "Báo cáo Y tế",
+    "description": "Tổng hợp tình hình y tế và các cơ sở y tế trên địa bàn",
+    "totalRecords": 156,
+    "lastUpdated": "2026-01-13",
+    "period": "Quý 4/2025"
+  },
+  "statistics": [
+    {
+      "label": "Tổng số cơ sở y tế",
+      "value": 45,
+      "unit": "cơ sở",
+      "trend": "up",
+      "trendValue": 5,
+      "icon": "pi pi-building",
+      "color": "#3B82F6"
+    },
+    {
+      "label": "Bệnh nhân khám",
+      "value": 12580,
+      "unit": "người",
+      "trend": "up",
+      "trendValue": 8.5,
+      "icon": "pi pi-users",
+      "color": "#10B981"
+    },
+    {
+      "label": "Nhân viên y tế",
+      "value": 892,
+      "unit": "người",
+      "trend": "stable",
+      "icon": "pi pi-user-plus",
+      "color": "#8B5CF6"
+    },
+    {
+      "label": "Tỷ lệ tiêm chủng",
+      "value": "96.5%",
+      "trend": "up",
+      "trendValue": 2.3,
+      "icon": "pi pi-shield",
+      "color": "#F59E0B"
+    }
+  ],
+  "charts": [
+    {
+      "type": "bar",
+      "title": "Số lượng bệnh nhân theo tháng",
+      "labels": [
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11",
+        "T12"
+      ],
+      "datasets": [
+        {
+          "label": "Bệnh nhân ngoại trú",
+          "data": [
+            1850,
+            1920,
+            2100,
+            2050,
+            2180,
+            2200
+          ],
+          "backgroundColor": "#3B82F6",
+          "borderColor": "#2563EB",
+          "borderWidth": 1
+        },
+        {
+          "label": "Bệnh nhân nội trú",
+          "data": [
+            320,
+            340,
+            380,
+            360,
+            390,
+            410
+          ],
+          "backgroundColor": "#10B981",
+          "borderColor": "#059669",
+          "borderWidth": 1
+        }
+      ]
+    },
+    {
+      "type": "pie",
+      "title": "Phân loại cơ sở y tế",
+      "labels": [
+        "Bệnh viện",
+        "Trạm y tế",
+        "Phòng khám"
+      ],
+      "datasets": [
+        {
+          "label": "Số lượng",
+          "data": [
+            8,
+            28,
+            9
+          ],
+          "backgroundColor": [
+            "#3B82F6",
+            "#10B981",
+            "#F59E0B"
+          ],
+          "borderColor": [
+            "#2563EB",
+            "#059669",
+            "#D97706"
+          ],
+          "borderWidth": 2
+        }
+      ]
+    },
+    {
+      "type": "line",
+      "title": "Tỷ lệ tiêm chủng theo tháng",
+      "labels": [
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11",
+        "T12"
+      ],
+      "datasets": [
+        {
+          "label": "Tỷ lệ tiêm chủng (%)",
+          "data": [
+            92.5,
+            93.2,
+            94.1,
+            95.0,
+            95.8,
+            96.5
+          ],
+          "backgroundColor": "rgba(139, 92, 246, 0.1)",
+          "borderColor": "#8B5CF6",
+          "borderWidth": 2,
+          "fill": true
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "id": "HC001",
+      "name": "Bệnh viện Đa khoa Huyện",
+      "type": "hospital",
+      "address": "123 Đường Lê Lợi, Thị trấn",
+      "capacity": 200,
+      "staff": 145,
+      "patients": 180
+    },
+    {
+      "id": "HC002",
+      "name": "Trạm Y tế Xã An Bình",
+      "type": "health_center",
+      "address": "Xã An Bình",
+      "capacity": 20,
+      "staff": 8,
+      "patients": 15
+    },
+    {
+      "id": "HC003",
+      "name": "Phòng khám Đa khoa Tâm Đức",
+      "type": "clinic",
+      "address": "456 Đường Trần Hưng Đạo, Thị trấn",
+      "capacity": 30,
+      "staff": 12,
+      "patients": 25
+    }
+  ]
+}

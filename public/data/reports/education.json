@@ -1,0 +1,173 @@
+{
+  "summary": {
+    "title": "Báo cáo Giáo dục",
+    "description": "Tổng hợp tình hình giáo dục và các cơ sở giáo dục trên địa bàn",
+    "totalRecords": 234,
+    "lastUpdated": "2026-01-13",
+    "period": "Năm học 2025-2026"
+  },
+  "statistics": [
+    {
+      "label": "Tổng số trường học",
+      "value": 68,
+      "unit": "trường",
+      "trend": "up",
+      "trendValue": 3,
+      "icon": "pi pi-building",
+      "color": "#3B82F6"
+    },
+    {
+      "label": "Tổng số học sinh",
+      "value": 15420,
+      "unit": "học sinh",
+      "trend": "up",
+      "trendValue": 4.2,
+      "icon": "pi pi-users",
+      "color": "#10B981"
+    },
+    {
+      "label": "Tổng số giáo viên",
+      "value": 1245,
+      "unit": "giáo viên",
+      "trend": "stable",
+      "icon": "pi pi-user",
+      "color": "#8B5CF6"
+    },
+    {
+      "label": "Tỷ lệ đạt chuẩn",
+      "value": "98.2%",
+      "trend": "up",
+      "trendValue": 1.5,
+      "icon": "pi pi-check-circle",
+      "color": "#F59E0B"
+    }
+  ],
+  "charts": [
+    {
+      "type": "bar",
+      "title": "Số lượng học sinh theo cấp học",
+      "labels": [
+        "Mầm non",
+        "Tiểu học",
+        "THCS",
+        "THPT"
+      ],
+      "datasets": [
+        {
+          "label": "Số học sinh",
+          "data": [
+            3200,
+            6500,
+            4200,
+            1520
+          ],
+          "backgroundColor": [
+            "#3B82F6",
+            "#10B981",
+            "#F59E0B",
+            "#8B5CF6"
+          ],
+          "borderColor": [
+            "#2563EB",
+            "#059669",
+            "#D97706",
+            "#7C3AED"
+          ],
+          "borderWidth": 1
+        }
+      ]
+    },
+    {
+      "type": "line",
+      "title": "Tỷ lệ học sinh đạt học lực khá giỏi",
+      "labels": [
+        "2020-2021",
+        "2021-2022",
+        "2022-2023",
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ],
+      "datasets": [
+        {
+          "label": "Tỷ lệ (%)",
+          "data": [
+            72.5,
+            75.2,
+            78.1,
+            82.0,
+            85.8,
+            88.5
+          ],
+          "backgroundColor": "rgba(59, 130, 246, 0.1)",
+          "borderColor": "#3B82F6",
+          "borderWidth": 2,
+          "fill": true
+        }
+      ]
+    },
+    {
+      "type": "doughnut",
+      "title": "Phân bố giáo viên theo trình độ",
+      "labels": [
+        "Đại học",
+        "Thạc sĩ",
+        "Tiến sĩ",
+        "Khác"
+      ],
+      "datasets": [
+        {
+          "label": "Số lượng",
+          "data": [
+            980,
+            220,
+            35,
+            10
+          ],
+          "backgroundColor": [
+            "#3B82F6",
+            "#10B981",
+            "#F59E0B",
+            "#EF4444"
+          ],
+          "borderColor": [
+            "#2563EB",
+            "#059669",
+            "#D97706",
+            "#DC2626"
+          ],
+          "borderWidth": 2
+        }
+      ]
+    }
+  ],
+  "schools": [
+    {
+      "id": "EDU001",
+      "name": "Trường THPT Nguyễn Huệ",
+      "type": "high_school",
+      "address": "789 Đường Nguyễn Huệ, Thị trấn",
+      "students": 850,
+      "teachers": 68,
+      "classrooms": 24
+    },
+    {
+      "id": "EDU002",
+      "name": "Trường THCS Lê Quý Đôn",
+      "type": "secondary",
+      "address": "234 Đường Lê Quý Đôn, Thị trấn",
+      "students": 1200,
+      "teachers": 85,
+      "classrooms": 32
+    },
+    {
+      "id": "EDU003",
+      "name": "Trường Tiểu học Trần Phú",
+      "type": "primary",
+      "address": "567 Đường Trần Phú, Xã An Bình",
+      "students": 680,
+      "teachers": 42,
+      "classrooms": 18
+    }
+  ]
+}

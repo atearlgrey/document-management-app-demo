@@ -1,0 +1,178 @@
+{
+  "summary": {
+    "title": "Báo cáo Nông nghiệp",
+    "description": "Tổng hợp tình hình sản xuất nông nghiệp và diện tích canh tác",
+    "totalRecords": 189,
+    "lastUpdated": "2026-01-13",
+    "period": "Vụ Đông Xuân 2025-2026"
+  },
+  "statistics": [
+    {
+      "label": "Tổng diện tích canh tác",
+      "value": 8450,
+      "unit": "ha",
+      "trend": "up",
+      "trendValue": 2.5,
+      "icon": "pi pi-map",
+      "color": "#3B82F6"
+    },
+    {
+      "label": "Sản lượng lúa",
+      "value": 42500,
+      "unit": "tấn",
+      "trend": "up",
+      "trendValue": 6.8,
+      "icon": "pi pi-chart-line",
+      "color": "#10B981"
+    },
+    {
+      "label": "Số hộ nông dân",
+      "value": 3250,
+      "unit": "hộ",
+      "trend": "stable",
+      "icon": "pi pi-home",
+      "color": "#8B5CF6"
+    },
+    {
+      "label": "Năng suất trung bình",
+      "value": "5.8 tấn/ha",
+      "trend": "up",
+      "trendValue": 4.2,
+      "icon": "pi pi-chart-bar",
+      "color": "#F59E0B"
+    }
+  ],
+  "charts": [
+    {
+      "type": "bar",
+      "title": "Diện tích canh tác theo loại cây trồng",
+      "labels": [
+        "Lúa",
+        "Ngô",
+        "Rau màu",
+        "Cây ăn quả",
+        "Khác"
+      ],
+      "datasets": [
+        {
+          "label": "Diện tích (ha)",
+          "data": [
+            5200,
+            1500,
+            850,
+            650,
+            250
+          ],
+          "backgroundColor": [
+            "#10B981",
+            "#F59E0B",
+            "#3B82F6",
+            "#8B5CF6",
+            "#EF4444"
+          ],
+          "borderColor": [
+            "#059669",
+            "#D97706",
+            "#2563EB",
+            "#7C3AED",
+            "#DC2626"
+          ],
+          "borderWidth": 1
+        }
+      ]
+    },
+    {
+      "type": "line",
+      "title": "Sản lượng lúa qua các năm",
+      "labels": [
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "datasets": [
+        {
+          "label": "Sản lượng (tấn)",
+          "data": [
+            35000,
+            37200,
+            38500,
+            39800,
+            41000,
+            42500
+          ],
+          "backgroundColor": "rgba(16, 185, 129, 0.1)",
+          "borderColor": "#10B981",
+          "borderWidth": 2,
+          "fill": true
+        }
+      ]
+    },
+    {
+      "type": "pie",
+      "title": "Phân bố hộ nông dân theo quy mô",
+      "labels": [
+        "Nhỏ (<1ha)",
+        "Trung bình (1-3ha)",
+        "Lớn (>3ha)"
+      ],
+      "datasets": [
+        {
+          "label": "Số hộ",
+          "data": [
+            1850,
+            1200,
+            200
+          ],
+          "backgroundColor": [
+            "#3B82F6",
+            "#10B981",
+            "#F59E0B"
+          ],
+          "borderColor": [
+            "#2563EB",
+            "#059669",
+            "#D97706"
+          ],
+          "borderWidth": 2
+        }
+      ]
+    }
+  ],
+  "crops": [
+    {
+      "id": "CROP001",
+      "name": "Lúa Nếp",
+      "type": "Lúa",
+      "area": 2800,
+      "yield": 16500,
+      "season": "Đông Xuân 2025-2026"
+    },
+    {
+      "id": "CROP002",
+      "name": "Lúa Tẻ",
+      "type": "Lúa",
+      "area": 2400,
+      "yield": 14200,
+      "season": "Đông Xuân 2025-2026"
+    },
+    {
+      "id": "CROP003",
+      "name": "Ngô lai",
+      "type": "Ngô",
+      "area": 1500,
+      "yield": 7800,
+      "season": "Đông Xuân 2025-2026"
+    },
+    {
+      "id": "CROP004",
+      "name": "Rau các loại",
+      "type": "Rau màu",
+      "area": 850,
+      "yield": 5200,
+      "season": "Quanh năm"
+    }
+  ]
+}
