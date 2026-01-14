@@ -1,0 +1,51 @@
+<div class="card bg-white p-4 rounded-lg shadow-md mb-4">
+  <div class="flex items-center gap-2 mb-4 text-blue-900 font-semibold text-lg">
+    <i class="pi pi-chart-line text-blue-500"></i>
+    <span>Cập nhật các chỉ số và xu hướng quan trọng từ các lĩnh vực hoạt động.</span>
+  </div>
+
+  <!-- Loading -->
+  <div *ngIf="loading" class="flex justify-center items-center h-64">
+    <i class="pi pi-spin pi-spinner text-4xl text-blue-500"></i>
+  </div>
+
+  <div *ngIf="!loading && data" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+    <!-- Card 1 -->
+    <div class="border rounded-lg p-4 shadow-sm bg-white">
+      <h3 class="text-center font-bold text-gray-700 mb-2">Cơ sở vật chất</h3>
+      <div class="h-[200px] flex justify-center">
+        <p-chart type="pie" [data]="data.facilities" [options]="pieOptions" height="200px" width="100%"></p-chart>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="border rounded-lg p-4 shadow-sm bg-white">
+      <h3 class="text-center font-bold text-gray-700 mb-2">Doanh nghiệp Công thương</h3>
+      <div class="h-[200px] flex justify-center">
+        <p-chart type="pie" [data]="data.business" [options]="pieOptions" height="200px" width="100%"></p-chart>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="border rounded-lg p-4 shadow-sm bg-white">
+      <h3 class="text-center font-bold text-gray-700 mb-2">Giáo viên và lớp học</h3>
+      <div class="h-[200px]">
+        <p-chart type="bar" [data]="data.education" [options]="barOptions" height="200px"></p-chart>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="border rounded-lg p-4 shadow-sm bg-white">
+      <h3 class="text-center font-bold text-gray-700 mb-2">Chỉ số thủ tục hành chính</h3>
+      <div class="h-[200px]">
+        <p-chart type="line" [data]="data.adminProcedures" [options]="lineOptions" height="200px"></p-chart>
+      </div>
+    </div>
+  </div>
+
+  <!-- Map -->
+  <div *ngIf="!loading && data?.map" class="border rounded-lg p-1 shadow-sm bg-white">
+    <!-- Leaflet Map Container -->
+    <div id="map" class="w-full h-[500px] rounded-lg z-0"></div>
+  </div>
+</div>

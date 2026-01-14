@@ -56,17 +56,17 @@ export class AppMenu {
                             {
                                 label: 'Healthcare',
                                 icon: 'pi pi-fw pi-sign-in',
-                                routerLink: ['/pages/ids-reports/healthcare']
+                                routerLink: ['/ids-reports/healthcare']
                             },
                             {
                                 label: 'Education',
                                 icon: 'pi pi-fw pi-sign-in',
-                                routerLink: ['/pages/ids-reports/education']
+                                routerLink: ['/ids-reports/education']
                             },
                             {
                                 label: 'Agriculture',
                                 icon: 'pi pi-fw pi-sign-in',
-                                routerLink: ['/pages/ids-reports/agriculture']
+                                routerLink: ['/ids-reports/agriculture']
                             },
                         ]
                     },

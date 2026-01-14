@@ -1,0 +1,8 @@
+:host {
+    display: block;
+}
+
+/* Ensure map container has height if Tailwind utility fails or redundant check */
+.map-container {
+    min-height: 500px;
+}
