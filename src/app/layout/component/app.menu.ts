@@ -71,6 +71,22 @@ export class AppMenu {
                         ]
                     },
                     {
+                        label: 'Trung tâm HCC',
+                        icon: 'pi pi-fw pi-home',
+                        items: [
+                            {
+                                label: 'Trung tâm HCC',
+                                icon: '',
+                                routerLink: ['/pages/public-service-center']
+                            },
+                            {
+                                label: 'Chỉ số thủ tục hành chính',
+                                icon: '',
+                                routerLink: ['/pages/public-service-center/administrative-procedures-index']
+                            },
+                        ]
+                    },
+                    {
                         label: 'Landing',
                         icon: 'pi pi-fw pi-globe',
                         routerLink: ['/landing']

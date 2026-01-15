@@ -1,0 +1,112 @@
+.public-service-center-content {
+    //padding: 1.5rem;
+    //max-width: 1400px;
+    //margin: 0 auto;
+}
+
+.public-service-center-content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+/* Charts Section */
+.charts-section {
+    margin-bottom: 2rem;
+}
+
+.charts-section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+}
+
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem;
+}
+
+.chart-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.chart-card h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.chart-type {
+    font-size: 0.875rem;
+    color: #64748b;
+    margin-bottom: 1rem;
+}
+
+/* Facilities Section */
+.facilities-section {
+    margin-bottom: 2rem;
+}
+
+.facilities-section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+}
+
+.facilities-table {
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.facilities-table thead {
+    background: #f8fafc;
+}
+
+.facilities-table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: #475569;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+}
+
+.facilities-table td {
+    padding: 1rem;
+    border-top: 1px solid #e2e8f0;
+    color: #1e293b;
+}
+
+.facility-type {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.facility-type.type-hospital {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.facility-type.type-clinic {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.facility-type.type-health_center {
+    background: #fef3c7;
+    color: #92400e;
+}

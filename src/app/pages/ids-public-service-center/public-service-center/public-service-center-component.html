@@ -1,0 +1,72 @@
+<div class="public-service-center-content">
+    <!-- Summary Section -->
+    <div class="report-header">
+        <h1>{{ publicServiceData?.summary?.title }}</h1>
+        <p class="description">{{ publicServiceData?.summary?.description }}</p>
+        <div class="meta-info">
+            <!--            <span><i class="pi pi-calendar"></i> Kỳ báo cáo: {{ reportData.summary.period }}</span>-->
+            <!--            <span><i class="pi pi-clock"></i> Cập nhật: {{ reportData.summary.lastUpdated }}</span>-->
+        </div>
+    </div>
+</div>
+
+<div class="charts-section">
+    <div class="charts-grid">
+        <div class="chart-card">
+            <h3>{{ publicServiceData?.processingPerformance?.title }}</h3>
+            <p class="chart-type"></p>
+            <p-chart type="bar" [data]="publicServiceData?.processingPerformance?.chart" [options]="barOptions" />
+        </div>
+
+        <div class="chart-card">
+            <h3>{{ publicServiceData?.procedureByType?.title }}</h3>
+            <p class="chart-type"></p>
+            <div class="flex justify-center">
+                <p-chart type="doughnut" class="w-full md:w-[35rem]" [data]="publicServiceData?.procedureByType?.chart"
+                         [options]="doughnutOptions"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="facilities-section">
+    <h2>{{publicServiceData?.processingProgress?.title}}</h2>
+    <table class="facilities-table">
+        <thead>
+        <tr>
+            <th>Mã hồ sơ</th>
+            <th>Loại thủ tục</th>
+            <th>Ngày nộp</th>
+            <th>Trạng thái</th>
+            <th>Ngày hẹn trả</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of publicServiceData?.processingProgress?.records">
+            <td>{{ item.recordCode }}</td>
+            <td>{{ item.procedureType }}</td>
+            <td>{{ item.submittedDate }}</td>
+            <td>{{ item.status }}</td>
+            <td>{{ item.appointmentDate }}</td>
+        </tbody>
+    </table>
+</div>
+
+<div class="facilities-section">
+    <h2>{{publicServiceData?.resolutionPerformanceStatistics?.title}}</h2>
+    <table class="facilities-table">
+        <thead>
+        <tr>
+            <th>Chỉ tiêu</th>
+            <th>Số lượng</th>
+            <th>Tỷ lệ (%)</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of publicServiceData?.resolutionPerformanceStatistics?.records">
+            <td>{{ item.indicator }}</td>
+            <td>{{ item.quantity + ' ' +(item?.unit ?? '') }}</td>
+            <td>{{ item.percentage }}</td>
+        </tbody>
+    </table>
+</div>
