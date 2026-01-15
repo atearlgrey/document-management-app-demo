@@ -1,0 +1,66 @@
+{
+    "summary": {
+        "title": "Chỉ số thủ tục hành chính",
+        "description": "Theo dõi các chỉ số đánh giá hiệu quả thủ tục hành chính."
+    },
+    "satisfactionSurvey": {
+        "title": "Đánh giá Hài lòng của Người dân",
+        "chart": {
+            "labels": [
+                "Rất hài lòng",
+                "Hài lòng",
+                "Không hài lòng"
+            ],
+            "datasets": [
+                {
+                    "data": [
+                        60,30,10
+                    ]
+                }
+            ]
+        }
+    },
+    "administrativeProcedure": {
+        "title": "Chỉ số Thủ tục Hành chính",
+        "chart": {
+            "labels": [
+                "2022",
+                "2023",
+                "2024"
+            ],
+            "datasets": [
+                {
+                    "data": [80,85,88],
+                    "backgroundColor": [],
+                    "borderColor": "#9b59b6",
+                    "pointBackgroundColor": "#1788df",
+                    "pointBorderColor": "#fff",
+                    "pointRadius": 5
+                }
+            ]
+        }
+    },
+    "evaluationCriteria": {
+        "title": "Chi tiết Chỉ số Cải cách Hành chính (CCHC)",
+        "records":  [
+            {
+                "criteria": "Công khai, minh bạch",
+                "score2023": 8.5,
+                "score2024": 8.8,
+                "note": "Cải thiện đáng kể"
+            },
+            {
+                "criteria": "Giải quyết TTHC đúng hạn",
+                "score2023": 9.0,
+                "score2024": 9.2,
+                "note": "Duy trì hiệu quả cao"
+            },
+            {
+                "criteria": "Ứng dụng CNTT",
+                "score2023": 7.8,
+                "score2024": 8.5,
+                "note": "Tăng cường ứng dụng dịch vụ công trực tuyến"
+            }
+        ]
+    }
+}

@@ -1,0 +1,100 @@
+{
+    "summary": {
+        "title": "Trung tâm hành chính công",
+        "description": "Theo dõi tiến độ xử lý hồ sơ, phân loại thủ tục, thống kê hiệu suất giải quyết."
+    },
+    "processingPerformance": {
+        "title": "Hiệu suất Giải quyết Hồ sơ",
+        "chart": {
+            "labels": [
+                "Đã giải quyết",
+                "Đang xử lý",
+                "Bổ sung"
+            ],
+            "datasets": [
+                {
+                    "data": [
+                        3,
+                        5,
+                        6
+                    ],
+                    "backgroundColor": [
+                        "#1788df",
+                        "#1788df",
+                        "#1788df"
+                    ],
+                    "borderColor": [
+                        "#1788df",
+                        "#1788df",
+                        "#1788df"
+                    ],
+                    "borderWidth": 1
+                }
+            ]
+        }
+    },
+    "procedureByType": {
+        "title": "Thủ tục theo loại",
+        "chart": {
+            "labels": [
+                "Cấp phép xây dựng",
+                "Đăng ký khai sinh ",
+                "Chuyển nhượng đất đai"
+            ],
+            "datasets": [
+                {
+                    "data": [
+                        1,1,1
+                    ]
+                }
+            ]
+        }
+    },
+    "processingProgress": {
+        "title": "Tiến độ Xử lý Hồ sơ",
+        "records": [
+            {
+                "recordCode": "HS001-2024",
+                "procedureType": "Cấp giấy phép xây dựng",
+                "submittedDate": "2024-05-01",
+                "status": "Đang xử lý",
+                "appointmentDate": "2024-08-01"
+            },
+            {
+                "recordCode": "HS002-2024",
+                "procedureType": "Đăng ký khai sinh",
+                "submittedDate": "2024-05-10",
+                "status": "Đã giải quyết",
+                "appointmentDate": "2024-05-15"
+            },
+            {
+                "recordCode": "HS003-2024",
+                "procedureType": "Chuyển nhượng quyền sử dụng đất",
+                "submittedDate": "2024-04-20",
+                "status": "Đang chờ bổ sung",
+                "appointmentDate": "2024-08-20"
+            }
+        ]
+    },
+    "resolutionPerformanceStatistics": {
+        "title": "Thống kê Hiệu suất Giải quyết",
+        "records": [
+            {
+                "indicator": "Hồ sơ đúng hạn",
+                "quantity": 1450,
+                "percentage": 96.87
+            },
+            {
+                "indicator": "Hồ sơ quá hạn",
+                "quantity": 50,
+                "percentage": 3.33
+            },
+            {
+                "indicator": "Thời gian giải quyết trung bình",
+                "quantity": 5,
+                "percentage": null,
+                "unit": "ngày"
+            }
+        ]
+    }
+}
