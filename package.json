@@ -25,6 +25,7 @@
         "@types/leaflet": "^1.9.21",
         "chart.js": "4.4.2",
         "chartjs-plugin-datalabels": "^2.2.0",
+        "keycloak-js": "^26.2.2",
         "leaflet": "^1.9.4",
         "primeclt": "^0.1.5",
         "primeicons": "^7.0.0",
