@@ -71,6 +71,17 @@ export class AppMenu {
                         ]
                     },
                     {
+                        label: 'Văn hóa - Xã hội',
+                        icon: 'pi pi-fw pi-users',
+                        items: [
+                            {
+                                label: 'Nội vụ',
+                                icon: '',
+                                routerLink: ['/pages/social-cultural/home-affairs']
+                            },
+                        ]
+                    },
+                    {
                         label: 'Trung tâm HCC',
                         icon: 'pi pi-fw pi-home',
                         items: [

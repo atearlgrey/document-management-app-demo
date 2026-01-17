@@ -8,6 +8,7 @@ import {
 import {
     AdministrativeProceduresIndexComponent
 } from '@/pages/ids-public-service-center/administrative-procedures-index/administrative-procedures-index-component';
+import { HomeAffairsComponent } from '@/pages/ids-social-cultural/home-affairs/home-affairs-component';
 
 export default [
     { path: 'documentation', component: Documentation },
@@ -15,5 +16,6 @@ export default [
     { path: 'empty', component: Empty },
     { path: 'public-service-center', component: PublicServiceCenterComponent },
     { path: 'public-service-center/administrative-procedures-index', component: AdministrativeProceduresIndexComponent },
+    { path: 'social-cultural/home-affairs', component: HomeAffairsComponent },
     { path: '**', redirectTo: '/notfound' }
 ] as Routes;
