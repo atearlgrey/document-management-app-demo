@@ -1,0 +1,72 @@
+{
+    "summary": {
+        "title": "Văn hóa Xã hội - Nội vụ",
+        "description": "Quản lý cán bộ, công chức, viên chức, thi đua khen thưởng."
+    },
+    "genderRatio": {
+        "title": "Tỷ lệ giới tính cán bộ",
+        "chart": {
+            "labels": [
+                "Nam",
+                "Nữ"
+            ],
+            "datasets": [
+                {
+                    "data": [
+                        60, 40
+                    ],
+                    "backgroundColor": [
+                        "#6395fa",
+                        "#62daab"
+                    ]
+                }
+            ]
+        }
+    },
+    "staffList": {
+        "title": "Danh sách Cán bộ, Công chức, Viên chức",
+        "records": [
+            {
+                "fullName": "Nguyễn Văn A",
+                "position": "Chủ tịch UBND",
+                "gender": "Nam",
+                "joinDate": "2005-03-10",
+                "status": "Đang công tác"
+            },
+            {
+                "fullName": "Trần Thị B",
+                "position": "Văn thư",
+                "gender": "Nữ",
+                "joinDate": "2010-06-20",
+                "status": "Đang công tác"
+            },
+            {
+                "fullName": "Lê Văn C",
+                "position": "Cán bộ Địa chính",
+                "gender": "Nam",
+                "joinDate": "2015-01-05",
+                "status": "Đang công tác"
+            }
+        ]
+    },
+    "rewardStatistic": {
+        "title": "Thống kê Thi đua Khen thưởng",
+        "records": [
+            {
+                "rewardType": "Bằng khen cấp Xã",
+                "count2023": 15,
+                "count2024": 7
+            },
+            {
+                "rewardType": "Giấy khen cấp Huyện",
+                "count2023": 5,
+                "count2024": 2
+            },
+            {
+                "rewardType": "Chiến sĩ thi đua",
+                "count2023": 3,
+                "count2024": 1
+            }
+        ]
+    }
+}
