@@ -5,50 +5,48 @@
     },
     "processingPerformance": {
         "title": "Hiệu suất Giải quyết Hồ sơ",
-        "chart": {
-            "labels": [
-                "Đã giải quyết",
-                "Đang xử lý",
-                "Bổ sung"
-            ],
-            "datasets": [
-                {
-                    "data": [
-                        3,
-                        5,
-                        6
-                    ],
-                    "backgroundColor": [
-                        "#1788df",
-                        "#1788df",
-                        "#1788df"
-                    ],
-                    "borderColor": [
-                        "#1788df",
-                        "#1788df",
-                        "#1788df"
-                    ],
-                    "borderWidth": 1
-                }
-            ]
-        }
+        "labels": [
+            "Đã giải quyết",
+            "Đang xử lý",
+            "Bổ sung"
+        ],
+        "datasets": [
+            {
+                "data": [
+                    3,
+                    5,
+                    6
+                ],
+                "backgroundColor": [
+                    "#1788df",
+                    "#1788df",
+                    "#1788df"
+                ],
+                "borderColor": [
+                    "#1788df",
+                    "#1788df",
+                    "#1788df"
+                ],
+                "borderWidth": 1
+            }
+        ]
     },
     "procedureByType": {
         "title": "Thủ tục theo loại",
-        "chart": {
-            "labels": [
-                "Cấp phép xây dựng",
-                "Đăng ký khai sinh ",
-                "Chuyển nhượng đất đai"
-            ],
-            "datasets": [
-                {
-                    "data": [
-                        1,1,1
-                    ]
-                }
-            ]
-        }
+        "labels": [
+            "Cấp phép xây dựng",
+            "Đăng ký khai sinh ",
+            "Chuyển nhượng đất đai"
+        ],
+        "datasets": [
+            {
+                "data": [
+                    1,
+                    1,
+                    1
+                ]
+            }
+        ]
     },
     "processingProgress": {
         "title": "Tiến độ Xử lý Hồ sơ",

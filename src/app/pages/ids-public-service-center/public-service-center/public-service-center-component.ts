@@ -47,6 +47,9 @@ export class PublicServiceCenterComponent implements OnInit {
                         color: textColor
                     },
                     display: false
+                },
+                datalabels: {
+                    display: false
                 }
             },
             scales: {
@@ -83,6 +86,9 @@ export class PublicServiceCenterComponent implements OnInit {
                         pointStyle: 'circle',  // 👉 chấm tròn
                         padding: 20            // 👉 giãn khoảng cách cho đẹp
                     }
+                },
+                datalabels: {
+                    display: false
                 }
             }
         };

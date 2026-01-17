@@ -9,7 +9,7 @@ import ChartDataLabels from 'chartjs-plugin-datalabels';
 Chart.register(ChartDataLabels);
 
 @Component({
-    selector: 'app-home-affairs',
+    selector: 'app-social-cultural-home-affairs',
     standalone: true,
     imports: [CommonModule, UIChart],
     templateUrl: './home-affairs-component.html',

@@ -5,23 +5,22 @@
     },
     "genderRatio": {
         "title": "Tỷ lệ giới tính cán bộ",
-        "chart": {
-            "labels": [
-                "Nam",
-                "Nữ"
-            ],
-            "datasets": [
-                {
-                    "data": [
-                        60, 40
-                    ],
-                    "backgroundColor": [
-                        "#6395fa",
-                        "#62daab"
-                    ]
-                }
-            ]
-        }
+        "labels": [
+            "Nam",
+            "Nữ"
+        ],
+        "datasets": [
+            {
+                "data": [
+                    60,
+                    40
+                ],
+                "backgroundColor": [
+                    "#6395fa",
+                    "#62daab"
+                ]
+            }
+        ]
     },
     "staffList": {
         "title": "Danh sách Cán bộ, Công chức, Viên chức",

@@ -52,6 +52,9 @@ export class AdministrativeProceduresIndexComponent implements OnInit {
                         pointStyle: 'circle',  // 👉 chấm tròn
                         padding: 20            // 👉 giãn khoảng cách cho đẹp
                     }
+                },
+                datalabels: {
+                    display: false
                 }
             }
         };
@@ -64,6 +67,9 @@ export class AdministrativeProceduresIndexComponent implements OnInit {
                     labels: {
                         color: textColor
                     },
+                    display: false
+                },
+                datalabels: {
                     display: false
                 }
             }

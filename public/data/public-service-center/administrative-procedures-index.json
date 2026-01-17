@@ -5,44 +5,46 @@
     },
     "satisfactionSurvey": {
         "title": "Đánh giá Hài lòng của Người dân",
-        "chart": {
-            "labels": [
-                "Rất hài lòng",
-                "Hài lòng",
-                "Không hài lòng"
-            ],
-            "datasets": [
-                {
-                    "data": [
-                        60,30,10
-                    ]
-                }
-            ]
-        }
+        "labels": [
+            "Rất hài lòng",
+            "Hài lòng",
+            "Không hài lòng"
+        ],
+        "datasets": [
+            {
+                "data": [
+                    60,
+                    30,
+                    10
+                ]
+            }
+        ]
     },
     "administrativeProcedure": {
         "title": "Chỉ số Thủ tục Hành chính",
-        "chart": {
-            "labels": [
-                "2022",
-                "2023",
-                "2024"
-            ],
-            "datasets": [
-                {
-                    "data": [80,85,88],
-                    "backgroundColor": [],
-                    "borderColor": "#9b59b6",
-                    "pointBackgroundColor": "#1788df",
-                    "pointBorderColor": "#fff",
-                    "pointRadius": 5
-                }
-            ]
-        }
+        "labels": [
+            "2022",
+            "2023",
+            "2024"
+        ],
+        "datasets": [
+            {
+                "data": [
+                    80,
+                    85,
+                    88
+                ],
+                "backgroundColor": [],
+                "borderColor": "#9b59b6",
+                "pointBackgroundColor": "#1788df",
+                "pointBorderColor": "#fff",
+                "pointRadius": 5
+            }
+        ]
     },
     "evaluationCriteria": {
         "title": "Chi tiết Chỉ số Cải cách Hành chính (CCHC)",
-        "records":  [
+        "records": [
             {
                 "criteria": "Công khai, minh bạch",
                 "score2023": 8.5,
