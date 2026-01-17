@@ -1,0 +1,121 @@
+{
+    "summary": {
+        "title": "Văn hóa Xã hội - Giáo dục",
+        "description": "Thống kê trường lớp, giáo viên, học sinh và quản lý cơ sở vật chất giáo dục."
+    },
+    "genderRatio": {
+        "title": "Phân bổ Học sinh theo Cấp",
+        "labels": [
+            "THCS",
+            "Tiểu học",
+            "Mầm non"
+        ],
+        "datasets": [
+            {
+                "data": [
+                    360,
+                    420,
+                    180
+                ],
+                "backgroundColor": [
+                    "#6395fa",
+                    "#62daab",
+                    "#657798"
+                ]
+            }
+        ]
+    },
+    "teacherAndClassStatistics": {
+        "title": "Thống kê Giáo viên và Lớp học",
+        "labels": [
+            "Trường A",
+            "Trường B",
+            "Trường C"
+        ],
+        "datasets": [
+            {
+                "label": "Giáo viên",
+                "data": [
+                    18,
+                    28,
+                    17
+                ],
+                "backgroundColor": "#6395fa"
+            },
+            {
+                "label": "Lớp học",
+                "data": [
+                    5,
+                    8,
+                    4
+                ],
+                "backgroundColor": "#62daab"
+            }
+        ]
+    },
+    "facilitiesStatus": {
+        "title": "Tình trạng Cơ sở vật chất",
+        "labels": [
+            "Hoàn thiện",
+            "Cần sửa chữa",
+            "Xuống cấp nghiêm trọng"
+        ],
+        "datasets": [
+            {
+                "data": [
+                    12, 5, 2
+                ],
+                "backgroundColor": "#6395fa"
+            }
+        ]
+    },
+    "educationalList": {
+        "title": "",
+        "records": [
+            {
+                "educationLevel": "Mầm non",
+                "schoolCount": 2,
+                "classCount": 15,
+                "teacherCount": 20,
+                "studentCount": 300
+            },
+            {
+                "educationLevel": "Tiểu học",
+                "schoolCount": 1,
+                "classCount": 25,
+                "teacherCount": 35,
+                "studentCount": 750
+            },
+            {
+                "educationLevel": "THCS",
+                "schoolCount": 1,
+                "classCount": 18,
+                "teacherCount": 28,
+                "studentCount": 540
+            }
+        ]
+    },
+    "educationStatistic": {
+        "title": "Thống kê kết quả giáo dục",
+        "records": [
+            {
+                "content": "Tỷ lệ học sinh tốt nghiệp THCS",
+                "result2023": "98",
+                "result2024": "99",
+                "unit": "%"
+            },
+            {
+                "content": "Tỷ lệ giáo viên đạt chuẩn",
+                "result2023": "95",
+                "result2024": "97",
+                "unit": "%"
+            },
+            {
+                "content": "Số học sinh giỏi cấp huyện",
+                "result2023": "35",
+                "result2024": "42",
+                "unit": ""
+            }
+        ]
+    }
+}

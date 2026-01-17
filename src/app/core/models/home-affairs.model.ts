@@ -1,33 +1,10 @@
+import { ChartData, ReportSummary } from '@/core/models/report.model';
+
 export interface HomeAffairs {
     summary: ReportSummary;
-    genderRatio: GenderRatio;
+    genderRatio: ChartData;
     staffList: StaffList;
     rewardStatistic: RewardStatistic;
-}
-
-export interface ReportSummary {
-    title: string;
-    description?: string;
-}
-
-export interface GenderRatio {
-    title: string;
-    chart: ChartData;
-}
-
-export interface ChartData {
-    labels: string[];
-    datasets: ChartDataset[];
-}
-
-export interface ChartDataset {
-    data: number[];
-    backgroundColor?: string | string[];
-    borderColor?: string | string[];
-    pointBackgroundColor?: string | string[];
-    pointBorderColor?: string | string[];
-    pointRadius?: number;
-    borderWidth?: number;
 }
 
 

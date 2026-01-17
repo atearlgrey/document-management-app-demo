@@ -79,6 +79,11 @@ export class AppMenu {
                                 icon: '',
                                 routerLink: ['/pages/social-cultural/home-affairs']
                             },
+                            {
+                                label: 'Giáo dục',
+                                icon: '',
+                                routerLink: ['/pages/social-cultural/education']
+                            },
                         ]
                     },
                     {

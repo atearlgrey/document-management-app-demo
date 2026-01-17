@@ -1,0 +1,82 @@
+<div class="education">
+    <!-- Summary Section -->
+    <div class="report-header">
+        <h1>{{ educationData?.summary?.title }}</h1>
+        <p class="description">{{ educationData?.summary?.description }}</p>
+        <div class="meta-info">
+        </div>
+    </div>
+</div>
+
+<div class="charts-section">
+    <div class="charts-grid">
+        <div class="chart-card">
+            <h3>{{ educationData?.genderRatio?.title }}</h3>
+            <p class="chart-type"></p>
+            <div class="flex justify-center">
+                <p-chart type="doughnut" class="w-full md:w-[35rem]" [data]="educationData?.genderRatio"
+                         [options]="doughnutOptions" />
+            </div>
+        </div>
+
+        <div class="chart-card">
+            <h3>{{ educationData?.teacherAndClassStatistics?.title }}</h3>
+            <p class="chart-type"></p>
+            <div class="flex justify-center">
+                <p-chart type="bar" class="w-full md:w-[35rem]" [data]="educationData?.teacherAndClassStatistics"
+                         [options]="barOptions" />
+            </div>
+        </div>
+
+        <div class="chart-card">
+            <h3>{{ educationData?.facilitiesStatus?.title }}</h3>
+            <p class="chart-type"></p>
+            <div class="flex justify-center">
+                <p-chart type="bar" class="w-full md:w-[35rem]" [data]="educationData?.facilitiesStatus"
+                         [options]="barOptions2" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="facilities-section">
+    <h2>{{ educationData?.educationalList?.title }}</h2>
+    <table class="facilities-table">
+        <thead>
+        <tr>
+            <th>Cấp học</th>
+            <th>Số trường</th>
+            <th>Số lớp</th>
+            <th>Số giáo viên</th>
+            <th>Số học sinh</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of educationData?.educationalList?.records">
+            <td>{{ item.educationLevel }}</td>
+            <td>{{ item.schoolCount }}</td>
+            <td>{{ item.classCount }}</td>
+            <td>{{ item.teacherCount }}</td>
+            <td>{{ item.studentCount }}</td>
+        </tbody>
+    </table>
+</div>
+
+<div class="facilities-section">
+    <h2>{{ educationData?.educationStatistic?.title }}</h2>
+    <table class="facilities-table">
+        <thead>
+        <tr>
+            <th>Nội dung</th>
+            <th>Kết quả 2023</th>
+            <th>Kết quả 2023</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of educationData?.educationStatistic?.records">
+            <td>{{ item.content }}</td>
+            <td>{{ item.result2023 + '' + item?.unit }}</td>
+            <td>{{ item.result2024 + '' + item?.unit }}</td>
+        </tbody>
+    </table>
+</div>

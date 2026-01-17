@@ -16,7 +16,7 @@
             <h3>{{ administrativeProceduresIndex?.satisfactionSurvey?.title }}</h3>
             <p class="chart-type"></p>
             <div class="flex justify-center">
-                <p-chart type="doughnut" class="w-full md:w-[35rem]" [data]="administrativeProceduresIndex?.satisfactionSurvey?.chart"
+                <p-chart type="doughnut" class="w-full md:w-[35rem]" [data]="administrativeProceduresIndex?.satisfactionSurvey"
                          [options]="doughnutOptions"/>
             </div>
         </div>
@@ -25,7 +25,7 @@
             <h3>{{ administrativeProceduresIndex?.administrativeProcedure?.title }}</h3>
             <p class="chart-type"></p>
             <div class="flex justify-center">
-                <p-chart type="line" class="w-full md:w-[35rem]" [data]="administrativeProceduresIndex?.administrativeProcedure?.chart"
+                <p-chart type="line" class="w-full md:w-[35rem]" [data]="administrativeProceduresIndex?.administrativeProcedure"
                          [options]="lineOptions"/>
             </div>
         </div>

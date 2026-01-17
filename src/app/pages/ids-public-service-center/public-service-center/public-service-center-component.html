@@ -15,14 +15,14 @@
         <div class="chart-card">
             <h3>{{ publicServiceData?.processingPerformance?.title }}</h3>
             <p class="chart-type"></p>
-            <p-chart type="bar" [data]="publicServiceData?.processingPerformance?.chart" [options]="barOptions" />
+            <p-chart type="bar" [data]="publicServiceData?.processingPerformance" [options]="barOptions" />
         </div>
 
         <div class="chart-card">
             <h3>{{ publicServiceData?.procedureByType?.title }}</h3>
             <p class="chart-type"></p>
             <div class="flex justify-center">
-                <p-chart type="doughnut" class="w-full md:w-[35rem]" [data]="publicServiceData?.procedureByType?.chart"
+                <p-chart type="doughnut" class="w-full md:w-[35rem]" [data]="publicServiceData?.procedureByType"
                          [options]="doughnutOptions"/>
             </div>
         </div>
